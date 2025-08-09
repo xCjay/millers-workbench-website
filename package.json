@@ -6,7 +6,8 @@
     "build": "next build",
     "dev": "next dev --turbopack",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "echo 'No deploy step needed for Cloudflare Pages'"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
