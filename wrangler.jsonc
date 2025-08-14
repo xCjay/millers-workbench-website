@@ -8,5 +8,6 @@
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
-  }
+  },
+  "custom_domain": "millerswb.com"
 }
