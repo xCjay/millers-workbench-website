@@ -1,0 +1,4 @@
+export const PHONE = '+18014949558'
+export const PHONE_DISPLAY = '(801) 494-9558'
+export const EMAIL = 'jerry@millerswb.com'
+export const EMAIL_MAILTO = `mailto:${EMAIL}`
