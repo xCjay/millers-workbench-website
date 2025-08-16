@@ -78,24 +78,6 @@ export default function MillersWorkbenchLanding() {
       title: "Deck Transformation",
       description: "Weather damage restored with proper prep and quality stain",
     },
-    {
-      before: "/cluttered-office-before.png",
-      after: "/repaired-organized-office.png",
-      title: "Office Space Makeover",
-      description: "Small repairs and organization made this workspace shine",
-    },
-    {
-      before: "/old-electrical-outlet.png",
-      after: "/placeholder-rau0s.png",
-      title: "Electrical Upgrade",
-      description: "Modern convenience, safely installed with attention to detail",
-    },
-    {
-      before: "/faded-interior-wall.png",
-      after: "/freshly-painted-wall.png",
-      title: "Interior Refresh",
-      description: "Sometimes all you need is the right color and careful application",
-    },
   ]
 
   return (
@@ -175,8 +157,7 @@ export default function MillersWorkbenchLanding() {
               </h1>
               <p className="text-xl text-amber-800 mb-10 leading-relaxed font-medium">
                 You know those projects that have been bugging you for months? The ones that are "too small" for
-                the big guys? That's exactly what we love to do. Jerry Miller and Miller's Workbench - where no job is
-                too small and every detail matters.
+                the big guys? That's exactly what we love to do. Jerry Miller and Miller's Workbench - Proudly serving the Summit and Wasatch County Areas.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
                 <Link
@@ -227,8 +208,8 @@ export default function MillersWorkbenchLanding() {
               <div className="bg-gradient-to-br from-orange-200 to-amber-200 rounded-3xl p-8 shadow-2xl transform -rotate-2">
                 <div className="bg-white rounded-2xl p-4 shadow-lg transform rotate-2">
                   <Image
-                    src="/jerry-miller-workshop.png"
-                    alt="Jerry Miller in his workshop surrounded by tools and completed projects"
+                    src="/jerryheadshot.jpg"
+                    alt="Photo of Jerry Miller"
                     width={600}
                     height={500}
                     className="rounded-xl"
