@@ -61,22 +61,22 @@ export default function MillersWorkbenchLanding() {
 
   const beforeAfterProjects = [
     {
-      before: "/damaged-kitchen-cabinet.png",
-      after: "/restored-kitchen-cabinet.png",
-      title: "Kitchen Cabinet Revival",
-      description: "Brought these tired cabinets back to life with careful sanding and refinishing",
+      before: "/before-door-frame.jpg",
+      after: "/after-door-frame.jpg",
+      title: "Door Frame Repair",
+      description: "Repaired and refinished a damaged door frame to restore function and appearance",
     },
     {
-      before: "/cracked-bathroom-tile-before-repair.png",
-      after: "/repaired-bathroom-tiles.png",
-      title: "Bathroom Tile Rescue",
-      description: "From cracked and stained to fresh and clean in just one day",
+      before: "/before-threshhold.jpg",
+      after: "/after-threshhold.jpg",
+      title: "Threshold & Trim Fix",
+      description: "Fixed and replaced worn threshold and trim for a clean, safe entry",
     },
     {
-      before: "/weathered-deck-before-staining.png",
-      after: "/stained-deck.png",
-      title: "Deck Transformation",
-      description: "Weather damage restored with proper prep and quality stain",
+      before: "/before-tile-floor.jpg",
+      after: "/after-tile-floor.jpg",
+      title: "Tile Floor Repair",
+      description: "Repaired cracked tiles and cleaned grout to bring the floor back to life",
     },
   ]
 
