@@ -230,7 +230,7 @@ export default function MillersWorkbenchLanding() {
               </div>
               <p className="text-lg text-amber-800 mb-6 leading-relaxed">
                 Here's the thing - I actually <em className="font-semibold text-amber-900">enjoy</em> the small
-                projects. That squeaky door that's been driving you nuts? The outlet that never worked quite right? The
+                projects. That squeaky door that's been driving you nuts? The cracked tiling you've been meaning to replace? The
                 touch-up paint job that's been on your list for six months? That's my sweet spot.
               </p>
               <p className="text-lg text-amber-800 mb-8 leading-relaxed">
