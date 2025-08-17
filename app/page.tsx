@@ -10,14 +10,15 @@ import {
   Building,
   Hammer,
   Paintbrush,
-  Droplets,
+  Bug,
+  Instagram,
   ArrowRight,
   Star,
   CheckCircle,
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { PHONE, PHONE_DISPLAY, EMAIL, EMAIL_MAILTO } from "@/lib/contact"
+import { PHONE, PHONE_DISPLAY, EMAIL, EMAIL_MAILTO, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/contact"
 
 export default function MillersWorkbenchLanding() {
   const services = [
@@ -30,7 +31,7 @@ export default function MillersWorkbenchLanding() {
     {
       icon: <Paintbrush className="h-8 w-8" />,
       title: "Touch-ups & Painting",
-      description: "From single walls to whole rooms - we make it look like it was always perfect.",
+      description: "Expert touch-ups and painting to refresh your space.",
       examples: "Accent walls, trim work, cabinet refinishing",
     },
     {
@@ -40,10 +41,10 @@ export default function MillersWorkbenchLanding() {
       examples: "Patching holes, texture matching, corner bead repairs",
     },
     {
-      icon: <Droplets className="h-8 w-8" />,
-      title: "Plumbing Problems",
-      description: "Drips, clogs, and quirks - we'll get your water flowing right again.",
-      examples: "Faucet repairs, toilet fixes, minor pipe work",
+      icon: <Bug className="h-8 w-8" />,
+      title: "Pest Exclusion",
+      description: "We'll keep unwanted animals out of your home.",
+      examples: "Rodent proofing, insect barriers, and more",
     },
     {
       icon: <Home className="h-8 w-8" />,
@@ -76,7 +77,7 @@ export default function MillersWorkbenchLanding() {
       before: "/before-tile-floor.jpg",
       after: "/after-tile-floor.jpg",
       title: "Tile Floor Repair",
-      description: "Repaired cracked tiles and cleaned grout to bring the floor back to life",
+      description: "Refinished the tile floor to restore its original beauty.",
     },
   ]
 
@@ -231,7 +232,7 @@ export default function MillersWorkbenchLanding() {
               <p className="text-lg text-amber-800 mb-6 leading-relaxed">
                 Here's the thing - I actually <em className="font-semibold text-amber-900">enjoy</em> the small
                 projects. That squeaky door that's been driving you nuts? The cracked tiling you've been meaning to replace? The
-                touch-up paint job that's been on your list for six months? That's my sweet spot.
+                touch-up paint job that's been on your list for six months?
               </p>
               <p className="text-lg text-amber-800 mb-8 leading-relaxed">
                 I'm Jerry Miller, and I started Miller's Workbench because I believe every home and business deserves
@@ -239,8 +240,8 @@ export default function MillersWorkbenchLanding() {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center bg-gradient-to-br from-amber-100 to-orange-100 p-6 rounded-2xl shadow-lg border border-amber-200">
-                  <div className="text-4xl font-bold text-orange-600 mb-2">10+</div>
-                  <div className="text-amber-800 font-semibold">Years of Experience</div>
+                  <div className="text-4xl font-bold text-orange-600 mb-2">20+</div>
+                  <div className="text-amber-800 font-semibold">Years in the Industry</div>
                 </div>
                 <div className="text-center bg-gradient-to-br from-amber-100 to-orange-100 p-6 rounded-2xl shadow-lg border border-amber-200">
                   <div className="text-4xl font-bold text-orange-600 mb-2">Highly</div>
@@ -259,7 +260,7 @@ export default function MillersWorkbenchLanding() {
             <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-6">What We Love to Fix</h2>
             <p className="text-xl text-amber-800 max-w-4xl mx-auto leading-relaxed font-medium">
               From the tiny annoyances to the medium-sized headaches, we handle the projects that make your space work
-              better and feel more like home. No job too small, no detail too minor.
+              better and feel more like home.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -292,7 +293,7 @@ export default function MillersWorkbenchLanding() {
             <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-6">Before & After: See the Difference</h2>
             <p className="text-xl text-amber-800 max-w-4xl mx-auto leading-relaxed font-medium">
               Sometimes a picture really is worth a thousand words. Here's how we've helped our neighbors transform
-              their spaces, one small project at a time.
+              their spaces.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -349,7 +350,7 @@ export default function MillersWorkbenchLanding() {
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
             <p className="text-xl text-amber-100 max-w-4xl mx-auto leading-relaxed font-medium">
-              Got a project that's been bugging you? Let's talk about it. No project too small, no question too simple.
+              Got a project that's been bugging you? Let's talk about it. <br></br>
               Jerry's here to help make your space work better.
             </p>
           </div>
@@ -416,8 +417,7 @@ export default function MillersWorkbenchLanding() {
                 </div>
               </div>
               <p className="text-amber-200 leading-relaxed font-medium">
-                We do the work that big contractors won't touch. Professional craftsmanship for every project, no matter
-                how small.
+                We do the work that big contractors won't touch. Professional craftsmanship for every project.
               </p>
             </div>
             <div>
@@ -455,6 +455,15 @@ export default function MillersWorkbenchLanding() {
                 <Link href={EMAIL_MAILTO} className="text-amber-200 flex items-center font-medium hover:underline">
                   <Mail className="h-5 w-5 mr-3" />
                   {EMAIL}
+                </Link>
+                <Link
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-amber-200 flex items-center font-medium hover:underline"
+                >
+                  <Instagram className="h-5 w-5 mr-3" />
+                  {INSTAGRAM_HANDLE}
                 </Link>
               </div>
             </div>
