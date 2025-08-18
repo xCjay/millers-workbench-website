@@ -181,14 +181,24 @@ export default function MillersWorkbenchLanding() {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-amber-200 to-orange-200 rounded-3xl p-8 shadow-2xl transform rotate-2">
-                <div className="bg-transparent rounded-2xl p-4 shadow-lg transform -rotate-2">
-                  <Image
-                    src="/mwblogo-modified.png"
-                    alt="Jerry Miller working on a detailed project in his workshop"
-                    width={600}
-                    height={500}
-                    className="rounded-xl shadow-md"
-                  />
+                <div className="bg-transparent rounded-2xl p-4 shadow-lg transform -rotate-2 relative">
+                  {/* Adjustable white circle behind the logo. Change the value of --logo-circle-size to resize. */}
+                  <div
+                    className="absolute inset-0 flex items-center justify-center pointer-events-none"
+                    style={{ ['--logo-circle-size' as any]: '450px' } as any}
+                  >
+                    <div className="bg-white rounded-full w-[var(--logo-circle-size)] h-[var(--logo-circle-size)] shadow-md"></div>
+                  </div>
+
+                  <div className="relative z-10 flex items-center justify-center">
+                    <Image
+                      src="/mwblogo-modified.png"
+                      alt="Jerry Miller working on a detailed project in his workshop"
+                      width={600}
+                      height={500}
+                      className="rounded-xl shadow-md"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-4 py-2 rounded-full shadow-lg font-semibold text-sm">
