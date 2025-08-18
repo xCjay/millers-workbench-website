@@ -181,9 +181,9 @@ export default function MillersWorkbenchLanding() {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-amber-200 to-orange-200 rounded-3xl p-8 shadow-2xl transform rotate-2">
-                <div className="bg-white rounded-2xl p-4 shadow-lg transform -rotate-2">
+                <div className="bg-transparent rounded-2xl p-4 shadow-lg transform -rotate-2">
                   <Image
-                    src="/jerry-miller-woodworking.png"
+                    src="/mwblogo-modified.png"
                     alt="Jerry Miller working on a detailed project in his workshop"
                     width={600}
                     height={500}
@@ -257,7 +257,7 @@ export default function MillersWorkbenchLanding() {
       <section id="services" className="py-24 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-6">What We Love to Fix</h2>
+            <h2 className="text-4xl lg:text-5xl font-bold text-amber-900 mb-6">What We Fix</h2>
             <p className="text-xl text-amber-800 max-w-4xl mx-auto leading-relaxed font-medium">
               From the tiny annoyances to the medium-sized headaches, we handle the projects that make your space work
               better and feel more like home.
